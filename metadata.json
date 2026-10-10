@@ -1,0 +1,6 @@
+{
+  "name": "AccessLens AI",
+  "description": "Multimodal assistive learning platform and BIS IS 17802 compliance auditor for specially abled students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
