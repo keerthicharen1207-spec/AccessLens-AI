@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.FactCheck
+import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -23,9 +25,9 @@ import com.example.ui.theme.*
 import kotlinx.coroutines.launch
 
 enum class AppTab(val title: String, val icon: androidx.compose.ui.graphics.vector.ImageVector, val testTag: String) {
-    AUDITOR("Auditor", Icons.Default.FactCheck, "tab_auditor"),
+    AUDITOR("Auditor", Icons.AutoMirrored.Filled.FactCheck, "tab_auditor"),
     VISION("Vision Alt", Icons.Default.Visibility, "tab_vision"),
-    DYSLEXIA("Dyslexia", Icons.Default.MenuBook, "tab_dyslexia"),
+    DYSLEXIA("Dyslexia", Icons.AutoMirrored.Filled.MenuBook, "tab_dyslexia"),
     VOICE_HUB("Voice (IS 16350)", Icons.Default.Mic, "tab_voice")
 }
 

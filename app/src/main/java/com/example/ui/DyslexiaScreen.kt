@@ -8,6 +8,8 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.FormatListBulleted
+import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -376,7 +378,7 @@ fun DyslexiaScreen(
                 ) {
                     Column(modifier = Modifier.padding(14.dp)) {
                         Row(verticalAlignment = Alignment.CenterVertically) {
-                            Icon(Icons.Default.FormatListBulleted, contentDescription = null, tint = NavyPrimaryLight)
+                            Icon(Icons.AutoMirrored.Filled.FormatListBulleted, contentDescription = null, tint = NavyPrimaryLight)
                             Spacer(modifier = Modifier.width(8.dp))
                             Text(
                                 text = "Step-by-Step Bullet Takeaways",
@@ -421,7 +423,7 @@ fun DyslexiaScreen(
                     OutlinedCard(shape = RoundedCornerShape(12.dp)) {
                         Column(modifier = Modifier.padding(14.dp)) {
                             Row(verticalAlignment = Alignment.CenterVertically) {
-                                Icon(Icons.Default.MenuBook, contentDescription = null, tint = AmberTertiary)
+                                Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null, tint = AmberTertiary)
                                 Spacer(modifier = Modifier.width(8.dp))
                                 Text(
                                     text = "Difficult Words Unpacked (Glossary)",

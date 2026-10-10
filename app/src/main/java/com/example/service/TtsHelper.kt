@@ -23,7 +23,7 @@ class TtsHelper(context: Context) {
             tts = TextToSpeech(context.applicationContext) { status ->
                 if (status == TextToSpeech.SUCCESS) {
                     try {
-                        tts?.language = Locale("en", "IN")
+                        tts?.language = Locale.forLanguageTag("en-IN")
                         tts?.setSpeechRate(speechRate)
                         tts?.setOnUtteranceProgressListener(object : UtteranceProgressListener() {
                             override fun onStart(utteranceId: String?) {
@@ -54,10 +54,10 @@ class TtsHelper(context: Context) {
         currentLanguageCode = langCode
         try {
             val locale = when (langCode.lowercase(Locale.ROOT)) {
-                "hi", "hi-in" -> Locale("hi", "IN")
-                "ta", "ta-in" -> Locale("ta", "IN")
-                "bn", "bn-in" -> Locale("bn", "IN")
-                else -> Locale("en", "IN")
+                "hi", "hi-in" -> Locale.forLanguageTag("hi-IN")
+                "ta", "ta-in" -> Locale.forLanguageTag("ta-IN")
+                "bn", "bn-in" -> Locale.forLanguageTag("bn-IN")
+                else -> Locale.forLanguageTag("en-IN")
             }
             tts?.language = locale
         } catch (_: Exception) {
